@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-You can see the [Live Demo](https://marurevi.github.io/To-do-List/dist/index.html) here. 
+You can see the [Live Demo](https://marurevi.github.io/To-do-list-CodingPartnerReview/dist/index.html) here. 
 
 
 ## Getting Started
