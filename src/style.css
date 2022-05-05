@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  box-shadow: rgb(112, 109, 109) 2px 2px 5px 0.8px;
+  margin: 10vh 20vw;
+  width: 60%;
+}
+
+#uList {
+  margin: 2vh 1vw;
+  padding: 1vh 1vw;
+  list-style: none;
+}
+
+#uList li {
+  padding: 5px;
+}
+
+#uList li:not(:nth-child(1)) {
+  border-top: rgb(112, 109, 109) 1px solid;
+}
+
+#newTask {
+  font-style: italic;
+  border: none;
+  width: 98%;
+  padding: 5px;
+}
+
+.task-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editableMode {
+  background-color: rgb(245, 245, 171);
+}
+
+input[type=checkbox] {
+  margin-right: 5px;
+  color: black;
+  cursor: pointer;
+}
+
+input[type=text] {
+  border: none;
+  background-color: transparent;
+  color: black;
+  padding: 4px;
+  font-size: medium;
+}
+
+input[type=checkbox]:checked + input[type=text] {
+  color: #969696;
+  text-decoration: line-through;
+  font-style: italic;
+  margin-right: 5px;
+  pointer-events: all;
+}
+
+.menu,
+.menu::before {
+  font-size: x-large;
+  font-weight: bold;
+  background-image: url(./icons/dots.svg);
+  background-repeat: no-repeat;
+  color: transparent;
+  cursor: pointer;
+}
+
+.menu:active,
+.menu::after {
+  background-image: url(./icons/trashcan.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.clear {
+  color: #969696;
+  padding: 3vh;
+  border: none;
+  width: 100%;
+}
